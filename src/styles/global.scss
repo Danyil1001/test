@@ -48,3 +48,12 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  width: $container-width;
+  max-width: $max-width-container;
+  margin: 0 auto;
+  @media (max-width: $small-mobile) {
+    width: $container-width-mobile;
+  }
+}

@@ -1,0 +1,28 @@
+$tablet: 1200px;
+$small-tablet: 992px;
+$mobile: 768px;
+$small-mobile: 576px;
+
+$max-width-container: 1920px;
+
+$container-side-distance: 25px;
+$container-side-distance-mobile: 20px;
+
+$container-width: calc(100% - calc(2 * $container-side-distance));
+$container-width-mobile: calc(100% - calc(2 * $container-side-distance-mobile));
+
+$container-width-big: calc(100% - calc(2 * $container-side-distance));
+$container-width-mobile-big: calc(
+  100% - calc(2 * $container-side-distance-mobile)
+);
+
+$container-width-1346: calc(100% - calc(2 * $container-side-distance));
+$container-width-mobile-1346: calc(
+  100% - calc(2 * $container-side-distance-mobile)
+);
+
+$container-width-1872: calc(100% - calc(2 * $container-side-distance));
+$container-width-mobile-1872: calc(
+  100% - calc(2 * $container-side-distance-mobile)
+);
+$white: #fff;

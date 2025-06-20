@@ -1,0 +1,92 @@
+.buttonRaw {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  min-width: fit-content;
+  padding: 0;
+}
+
+.button {
+  position: relative;
+  border-radius: 132px;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+// button types
+.mainButton {
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(106.2deg, #963488 -12.33%, #FC6F32 50.28%, #FF4A59 114.17%) border-box;
+  transition: all 0.3s ease;
+  border-radius: 90px;
+
+  &:hover,
+  &:active {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    outline: none;
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+}
+
+.secondaryButton {
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 90px;
+
+  &:hover,
+  &:active {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    outline: none;
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+}
+
+// button sizes
+.smallButton {
+  min-height: 36px;
+  font-size: 14px;
+  padding: 6px 22px;
+}
+
+.mediumButton {
+  min-height: 44px;
+  font-size: 16px;
+  padding: 8px 24px;
+}
+
+.largeButton {
+  min-height: 56px;
+  font-size: 18px;
+  padding: 10px 24px;
+}

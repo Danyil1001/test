@@ -3,17 +3,22 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import HomePage from './pages/home';
 import './styles/global.scss'
+import HomePage from './components/pages/home/home';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+        </Routes>
+      </Router>
+    </div>
+
   );
 }
 
 export default App
+
+
