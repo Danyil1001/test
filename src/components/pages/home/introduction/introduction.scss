@@ -1,16 +1,27 @@
+.introduction{
+    margin-top: 72px;
+}
+
 .title {
     background: linear-gradient(109.22deg, #B53EA4 3.07%, #FC6F32 47.61%, #FF4A59 93.05%);
     font-weight: 500;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 128px;
-    font-family: 'Clash Grotesk', sans-serif;
+    font-family: 'Clash Grotesk'
 }
 
 .subTitle {
-    margin: 16px 0;
+    margin: 22px 0;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 24px;
     color: white;
+}
+
+.cardsContainer {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
