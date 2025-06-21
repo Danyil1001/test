@@ -2,6 +2,8 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import './home.scss';
 import Header from '../../layouts/header/header';
 import Introduction from './introduction/introduction';
+import IntegratedProjects from './integrated-projects/integrated-projects';
+import MoonImg from '../../../assets/images/home/moon.png'
 
 export default function HomePage() {
   return (
@@ -15,7 +17,7 @@ export default function HomePage() {
         <ParallaxLayer offset={0} speed={0.1} style={{ zIndex: 1 }}>
           <div className='container'>
             <div className="imgContainer">
-              <img src="/assets/images/moon.png" alt="Moon" className="moon-image" />
+              <img src={MoonImg} alt="Moon" className="moon-image" />
             </div>
           </div>
         </ParallaxLayer>
@@ -24,6 +26,7 @@ export default function HomePage() {
           <div className="container">
             <Header />
             <Introduction />
+            <IntegratedProjects></IntegratedProjects>
           </div>
         </ParallaxLayer>
 

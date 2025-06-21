@@ -1,5 +1,5 @@
 import { CardInfo } from '../data';
-import './count-card.scss';
+import styles from './count-card.module.scss';
 
 interface Props {
     cardInfo: CardInfo;
@@ -10,11 +10,11 @@ interface Props {
 const CountCard = ({ cardInfo, index, isVisible }: Props) => {
     return (
         <div
-            className={`card animated-card ${isVisible ? 'visible' : ''}`}
+            className={`${styles.card} ${styles['animated-card']} ${isVisible ? styles.visible : ''}`}
             data-index={index}
         >
-            <span className='amount'>{cardInfo.amount}</span>
-            <span className='descr'>{cardInfo.description}</span>
+            <span className={styles.amount}>{cardInfo.amount}</span>
+            <span className={styles.descr}>{cardInfo.description}</span>
         </div>
     );
 };
