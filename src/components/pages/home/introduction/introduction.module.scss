@@ -1,3 +1,5 @@
+@import '../../../../styles/variables.scss';
+
 .introduction{
     margin-top: 72px;
 }
@@ -8,7 +10,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 128px;
-    font-family: 'Clash Grotesk'
+    font-family: $font-clash-grotesk
 }
 
 .subTitle {
@@ -16,7 +18,7 @@
     font-family: 'Inter';
     font-weight: 400;
     font-size: 24px;
-    color: white;
+    color: $white;
 }
 
 .cardsContainer {

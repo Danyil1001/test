@@ -1,8 +1,11 @@
+// media
 $tablet: 1200px;
 $small-tablet: 992px;
 $mobile: 768px;
 $small-mobile: 576px;
 
+
+// containers
 $max-width-container: 1920px;
 
 $container-side-distance: 25px;
@@ -25,4 +28,12 @@ $container-width-1872: calc(100% - calc(2 * $container-side-distance));
 $container-width-mobile-1872: calc(
   100% - calc(2 * $container-side-distance-mobile)
 );
+
+// colors
 $white: #fff;
+$black: black;
+
+// fonts
+$font-clash-grotesk: 'Clash Grotesk';
+$inter: 'Inter'
+

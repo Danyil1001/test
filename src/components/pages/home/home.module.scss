@@ -1,4 +1,6 @@
-.parallax-container {
+@import '../../../styles/variables.scss';
+
+.parallaxContainer {
   width: 100%;
   height: 100vh;
 }
@@ -17,7 +19,7 @@
   justify-content: flex-end;
 }
 
-.moon-image {
+.moonImage {
   width: 750px;
   height: 750px;
 }
@@ -27,5 +29,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: $white;
 }

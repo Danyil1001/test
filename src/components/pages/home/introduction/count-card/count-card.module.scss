@@ -1,3 +1,5 @@
+@import '../../../../../styles/variables.scss';
+
 .card {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,7 @@
     padding: 16px;
     background: linear-gradient(106.2deg, rgba(150, 52, 136, 0.2) -12.33%, rgba(252, 111, 50, 0.2) 50.28%, rgba(255, 74, 89, 0.2) 114.17%);
     border-radius: 90px;
-    color: white;
+    color: $white;
     opacity: 0;
     transform: translateY(60px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -33,7 +35,7 @@
 
 .amount {
     font-size: 64px;
-    font-family: 'Clash Grotesk';
+    font-family: $font-clash-grotesk;
     font-weight: 600;
     margin-bottom: 16px;
 }

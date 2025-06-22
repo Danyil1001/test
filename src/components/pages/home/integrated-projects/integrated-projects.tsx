@@ -11,7 +11,7 @@ const IntegratedProjects = () => {
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
-                    observer.disconnect(); // Remove if you want repeated animations
+                    observer.disconnect();
                 }
             },
             { threshold: 0.3 }
