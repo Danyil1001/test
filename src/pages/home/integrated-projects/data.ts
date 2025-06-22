@@ -8,18 +8,19 @@ export type ProjectDataType = {
     img: string
 }
 
-export const projectsData:Array<ProjectDataType> = [
+export const projectsData: Array<ProjectDataType> = [
     {
         img: SolanaImg
     },
-    {
-        img: ArweaveImg
-    },
+
     {
         img: TelegramImg
     },
     {
         img: BittensorImg
+    },
+    {
+        img: ArweaveImg
     },
     {
         img: lampImg

@@ -9,7 +9,7 @@
 }
 
 .title {
-    font-size: 48px;
+    font-size: clamp(32px, 4vw, 48px);
     font-weight: 500;
     font-family: $font-clash-grotesk;
     color: $white;
@@ -27,27 +27,12 @@
     transform: translateX(200px);
     transition: opacity 1.2s ease, transform 1.2s ease;
     overflow-x: auto;
-
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+   
     &::-webkit-scrollbar {
-        height: 8px;
+        display: none;
     }
-
-    &::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
 }
 
 
@@ -58,4 +43,8 @@
 
 .projectImg {
     max-height: 100px;
+      @media (max-width:$tablet) {
+        height: 55px;
+    }
+    
 }

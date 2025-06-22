@@ -9,15 +9,15 @@
     font-weight: 500;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 128px;
-    font-family: $font-clash-grotesk
+    font-family: $font-clash-grotesk;
+    font-size: clamp(48px, 8vw, 128px);
 }
 
 .subTitle {
     margin: 22px 0;
-    font-family: 'Inter';
+    font-family: $inter;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(18px, 2.5vw, 24px);
     color: $white;
 }
 
@@ -27,7 +27,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 
-    @media (max-width:1430px) {
+    @media (max-width:$small-tablet) {
         grid-template-columns: 1fr;
     }
+
 }

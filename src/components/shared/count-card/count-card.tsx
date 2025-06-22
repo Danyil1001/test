@@ -1,5 +1,5 @@
 
-import { CardInfoType } from '../data';
+import { CardInfoType } from '../../../pages/home/introduction/data';
 import styles from './count-card.module.scss';
 interface Props {
     cardInfo: CardInfoType;
