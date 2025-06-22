@@ -1,6 +1,6 @@
 @import '../../../../styles/variables.scss';
 
-.introduction{
+.introduction {
     margin-top: 72px;
 }
 
@@ -26,4 +26,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
+    @media (max-width:1430px) {
+        grid-template-columns: 1fr;
+    }
 }

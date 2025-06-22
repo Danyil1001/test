@@ -1,4 +1,5 @@
 @import '../../../../styles/variables.scss';
+
 .projectsSection {
     display: flex;
     flex-direction: column;
@@ -12,17 +13,20 @@
     font-weight: 500;
     font-family: $font-clash-grotesk;
     color: $white;
+    text-align: center;
 }
 
 .projectsBlock {
     width: 100%;
     display: flex;
+    gap: 50px;
     align-items: center;
     justify-content: space-between;
     margin-top: 24px;
     opacity: 0;
     transform: translateX(200px);
     transition: opacity 1.2s ease, transform 1.2s ease;
+    overflow-x: scroll;
 }
 
 .projectsBlockVisible {

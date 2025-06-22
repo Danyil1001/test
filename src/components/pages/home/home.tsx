@@ -22,7 +22,7 @@ export default function HomePage() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={1} style={{ zIndex: 2 }}>
-          <div className="container">
+          <div className="container" >
             <Header />
             <Introduction />
             <IntegratedProjects />
