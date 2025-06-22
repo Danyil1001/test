@@ -1,9 +1,9 @@
-import './header.scss'
+import styles from './header.module.scss'
 import ButtonFilled from '../../ui/button/button-filled';
 
 const Header = () => {
     return (
-        <header className='header'>
+        <header className={styles.header}>
             <ButtonFilled color='secondary' size='m'>
                 LLM Leaderboard
             </ButtonFilled>
