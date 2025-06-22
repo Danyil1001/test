@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import styles from './integrated-projects.module.scss';
 import { ProjectDataType, projectsData } from './data';
-import { useIntersectionObserver } from '../../../../utils/hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../../../utils/hooks/useIntersectionObserver';
 
 const IntegratedProjects = () => {
   const blockRef = useRef<HTMLDivElement | null>(null);

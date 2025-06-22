@@ -1,5 +1,5 @@
 import './header.scss'
-import ButtonFilled from '../../../ui/button/button-filled';
+import ButtonFilled from '../../ui/button/button-filled';
 
 const Header = () => {
     return (

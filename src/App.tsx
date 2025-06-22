@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import './styles/global.scss'
-import HomePage from './components/pages/home/home';
+import HomePage from './pages/home/home';
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import styles from './introduction.module.scss';
-import ButtonFilled from '../../../../ui/button/button-filled';
+import ButtonFilled from '../../../components/ui/button/button-filled';
 import CountCard from './count-card/count-card';
 import { cardsInfo, CardInfoType } from './data';
-import { useIntersectionObserver } from '../../../../utils/hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../../../utils/hooks/useIntersectionObserver';
 
 const Introduction = () => {
     const cardsRef = useRef<HTMLDivElement | null>(null);

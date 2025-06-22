@@ -1,5 +1,5 @@
 import { ParallaxLayer } from '@react-spring/parallax';
-import MoonImg from '../../../../../assets/images/home/moon.png';
+import MoonImg from '../../../../assets/images/home/moon.png';
 import styles from './img-layer.module.scss'
 
 const ImgLayer=()=> {

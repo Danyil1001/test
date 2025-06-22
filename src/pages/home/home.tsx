@@ -1,5 +1,5 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Header from '../../layouts/header/header';
+import Header from '../../components/layouts/header/header';
 import Introduction from './introduction/introduction';
 import IntegratedProjects from './integrated-projects/integrated-projects';
 import styles from './home.module.scss';
