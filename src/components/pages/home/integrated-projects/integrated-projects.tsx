@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import styles from './integrated-projects.module.scss';
-import { projectsData } from './data';
+import { ProjectDataType, projectsData } from './data';
 import { useIntersectionObserver } from '../../../../utils/hooks/useIntersectionObserver';
 
 const IntegratedProjects = () => {
@@ -14,7 +14,7 @@ const IntegratedProjects = () => {
         ref={blockRef}
         className={`${styles.projectsBlock} ${isVisible ? styles.projectsBlockVisible : ''}`}
       >
-        {projectsData.map((projectInfo, index) => (
+        {projectsData.map((projectInfo: ProjectDataType, index) => (
           <img
             key={index}
             src={projectInfo.img}

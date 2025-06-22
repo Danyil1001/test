@@ -4,7 +4,11 @@ import BittensorImg from '../../../../assets/images/home/bittensor.png'
 import TelegramImg from '../../../../assets/images/home/telegram.png'
 import lampImg from '../../../../assets/images/home/lamp.png'
 
-export const projectsData = [
+export type ProjectDataType = {
+    img: string
+}
+
+export const projectsData:Array<ProjectDataType> = [
     {
         img: SolanaImg
     },
