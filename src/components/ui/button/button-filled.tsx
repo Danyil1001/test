@@ -1,4 +1,3 @@
-'use client'
 import classNames from 'classnames'
 import {
   useCallback,
@@ -7,19 +6,18 @@ import {
   ButtonHTMLAttributes,
   MouseEvent
 } from 'react'
-import './button.scss'
+import styles from './button.module.scss'
 import ButtonRaw from './button-raw'
-import { v4 as uuidv4 } from 'uuid'
 
 const BUTTON_SIZE = {
-  s: 'smallButton',
-  m: 'mediumButton',
-  l: 'largeButton',
+  s: styles.smallButton,
+  m: styles.mediumButton,
+  l: styles.largeButton,
 } as const
 
 const BACKGROUND_COLOR = {
-  main: 'mainButton',
-  secondary: 'secondaryButton',
+  main: styles.mainButton,
+  secondary: styles.secondaryButton,
 } as const
 
 type ButtonSize = keyof typeof BUTTON_SIZE
@@ -69,27 +67,22 @@ const ButtonFilled = forwardRef<HTMLButtonElement, IProps>(({
     [onClick]
   )
 
-  const tooltipId = tooltipContent ? uuidv4() : undefined
-
   return (
-    <>
-      <ButtonRaw
-        className={classNames(
-          'button',
-          buttonColorClass,
-          buttonSizeClass,
-          className
-        )}
-        onClick={handleClick}
-        disabled={isDisabled}
-        type={type}
-        ref={ref}
-        data-tooltip-id={tooltipId}
-        {...props}
-      >
-        {children}
-      </ButtonRaw>
-    </>
+    <ButtonRaw
+      className={classNames(
+        styles.button,
+        buttonColorClass,
+        buttonSizeClass,
+        className
+      )}
+      onClick={handleClick}
+      disabled={isDisabled}
+      type={type}
+      ref={ref}
+      {...props}
+    >
+      {children}
+    </ButtonRaw>
   )
 })
 

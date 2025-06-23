@@ -8,7 +8,6 @@ import BackgroundLayer from './layers/background-layer/background-layer';
 
 export default function HomePage() {
   return (
-    <>
       <Parallax pages={2} className={styles.parallaxContainer}>
         <ImgLayer/>
         <BackgroundLayer/>
@@ -20,6 +19,5 @@ export default function HomePage() {
           </div>
         </ParallaxLayer>
       </Parallax>
-    </>
   );
 }

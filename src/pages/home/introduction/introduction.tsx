@@ -3,7 +3,7 @@ import styles from './introduction.module.scss';
 import ButtonFilled from '../../../components/ui/button/button-filled';
 import CountCard from '../../../components/shared/count-card/count-card';
 import { cardsInfo, CardInfoType } from './data';
-import { useIntersectionObserver } from '../../../utils/hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../../../hooks/useIntersectionObserver';
 
 const Introduction = () => {
     const cardsRef = useRef<HTMLDivElement | null>(null);

@@ -5,7 +5,7 @@ import {
   ReactNode,
 } from "react";
 import classNames from "classnames";
-import "./button.scss";
+import styles from "./button.module.scss"
 
 interface IProps
   extends DetailedHTMLProps<
@@ -29,7 +29,7 @@ const ButtonRaw = forwardRef<HTMLButtonElement, IProps>((props, ref) => {
 
   return (
     <button
-      className={classNames('buttonRaw', className)}
+      className={classNames(styles.buttonRaw, className)} // use styles.buttonRaw
       ref={ref}
       type={type}
       disabled={disabled}
